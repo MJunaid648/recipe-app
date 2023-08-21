@@ -1,0 +1,78 @@
+.navbar {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 1.5em 1em;
+  background-color: #f7f8fa;
+  width: 11em;
+}
+.navbar .navTitle {
+  color: #b2b5bf;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: space-between;
+}
+.navbar ul li {
+  display: flex;
+  gap: 0.3em;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 2.5em;
+
+  color: #7d8497;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #2dc76d;
+}
+.navbarIconToggle {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  z-index: 20;
+  top: 22px;
+  left: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet devices */
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for small desktop/laptop devices */
+  
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Styles for large desktop/laptop devices */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styles for extra-large desktop/laptop devices */
+}
+/* .navbar {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: none;
+  transform: translateX(-200px);
+} */

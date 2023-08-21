@@ -1,0 +1,149 @@
+.hero_section {
+  display: flex;
+  gap: 0.5em;
+  border-bottom: 1px solid #8c8c9a;
+}
+
+.hero_left {
+  background-color: #0f0f2c;
+  padding: 1.5em 1em;
+  flex: 1;
+}
+.hero_left .left_heading {
+  color: #ffffff;
+  margin-bottom: 0.25em;
+}
+.hero_left .left_heading span {
+  color: #2dc76d;
+}
+.hero_left .tag_Line {
+  color: #8c8c9a;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.hero_left .new_btn {
+  background-color: #2dc76d;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.hero_right {
+  flex: 6;
+  padding: 1.5rem 1.5rem;
+}
+.hero_right .greeting_text_name {
+  color: #a4a8b4;
+  font-weight: 200;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.hero_right .right_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_right .searchBar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  height: 2.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+}
+.hero_right .searchBar input {
+  width: 100%;
+  height: 2rem;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+}
+.hero_right .searchBar input::placeholder {
+  color: #cacaca;
+  font-weight: bold;
+}
+.hero_right .navIcon {
+  display: none;
+}
+.navIcon:hover {
+  color: #2dc76d;
+}
+.navIcon:active {
+  padding-top: 0.5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* //dgdf */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .hero_right .navIcon {
+  }
+  .right_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero_right .searchBar {
+    padding: 0.5rem 0.5rem;
+    width: 70%;
+    height: 2rem;
+  }
+  .hero_right .searchBar input {
+    height: 1.5rem;
+    padding: 0.5rem;
+  }
+  .hero_left {
+    display: none;
+  }
+  .greeting_text_name {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet devices */
+  .hero_right .navIcon {
+    display: block;
+    position: fixed;
+  }
+  .right_container {
+    flex-direction: column;
+  }
+  .hero_right .searchBar {
+    padding: 0.5rem 0.5rem;
+    width: 70%;
+    height: 2rem;
+  }
+  .hero_right .searchBar input {
+    width: 100%;
+    height: 1.5rem;
+    padding: 0.5rem;
+  }
+  .hero_left {
+    display: none;
+  }
+  .greeting_text_name {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for small desktop/laptop devices */
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Styles for large desktop/laptop devices */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styles for extra-large desktop/laptop devices */
+}

@@ -1,0 +1,29 @@
+.carousel_container {
+  width: 100%;
+  margin-top: 1em;
+  display: block;
+}
+.carousel_item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.carousel_item img {
+  width: 100%;
+  max-width: 32%;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .carousel_item{
+    gap:0.5em;
+  }
+  .carousel_item img {
+    max-width: 49%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel_item img {
+    max-width: 100%;
+  }
+}

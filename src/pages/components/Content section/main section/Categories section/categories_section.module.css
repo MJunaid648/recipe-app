@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.heading .link {
+  color: #2dc76d;
+  text-decoration: none;
+}
+.cards_section {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1em;
+}
+.cards_section .card {
+  padding: 1em;
+  border: 1px solid #eaedf3;
+  border-radius: 5px;
+  /* width: 10%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cards_section .card:hover {
+  background-color: #2dc76d;
+  color: white;
+  transform: translateY(-12px);
+  box-shadow: 6px 10px 8px #ccc;
+}
+.cards_section .card:active {
+  transform: translateY(-10px);
+  box-shadow: 4px 8px 8px #ccc;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .cards_section {
+    /* grid-template-rows: 2fr; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet devices */
+  .cards_section {
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for small desktop/laptop devices */
+  .cards_section {
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Styles for large desktop/laptop devices */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styles for extra-large desktop/laptop devices */
+  
+}

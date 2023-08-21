@@ -1,0 +1,81 @@
+.advertisement_section {
+  /* padding: 2rem 1.5rem; */
+  font-family: sans-serif;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recipe_ad {
+  background-image: url("../../../../../../public/Images/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 75%;
+  background-size: cover;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 5px;
+  gap: 1em;
+  padding: 2.5em;
+  color: #ffffff;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.recipe_ad span {
+  background-color: #ffffff;
+  color: black;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 0.7rem;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-size: 14px;
+}
+.seeBookmarks_section {
+  padding: 1em;
+  background-color: #e9f9f0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 5px;
+}
+.seeBookmarks_section .bookmarked_recipe_count {
+  font-weight: bold;
+}
+.seeBookmarks_section a {
+  color: #2dc76d;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px){
+  /* Styles for mobile devices */
+  .advertisement_section{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet devices */
+}
+ @media only screen and (min-width: 769px) and (max-width: 992px) {
+/* Styles for small desktop/laptop devices */
+} 
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) { 
+/* Styles for large desktop/laptop devices */
+} 
+
+@media only screen and (min-width:1200px){
+  /* Styles for extra-large desktop/laptop devices */
+} 

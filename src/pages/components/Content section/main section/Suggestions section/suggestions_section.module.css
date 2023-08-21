@@ -1,0 +1,120 @@
+.container {
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.buttons_group {
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  gap: 0.2em;
+  border: 1px solid #eaedf3;
+  border-radius: 5px;
+}
+.buttons_group button {
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.buttons_group .left_button {
+  border-right: 1px solid #eaedf3;
+}
+.buttons_group button:hover {
+  color: #2dc76d;
+}
+.buttons_group button:active {
+  padding-bottom: 5px;
+}
+.suggestedItems {
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1.5em;
+}
+.card {
+  /* margin: 0 5em; */
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  cursor: pointer;
+  /* margin:0 1em; */
+  border: 2px solid green;
+}
+.card_img {
+  border-radius: 5px;
+  width: 30em;
+  height: auto;
+}
+.card .recipe_name {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.card .recipe_description {
+  color: #aaacb0;
+  letter-spacing: 0.5px;
+}
+.card .card_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .time {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+}
+.card .time p {
+  font-size: 0.8em;
+  color: #aaacb0;
+}
+.slider {
+  width: 100vh;
+  border: 2px solid red;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .suggestedItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablet devices */
+
+  .suggestedItems {
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for small desktop/laptop devices */
+  .suggestedItems {
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media only screen and (min-width: 993px) and (max-width: 1200px) {
+  Styles for large desktop/laptop devices
+} */
+
+/* @media only screen and (min-width:1200){
+    Styles for extra-large desktop/laptop devices
+} */
