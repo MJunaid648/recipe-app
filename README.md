@@ -1,6 +1,6 @@
 # Recipe-app - Beautiful Recipe App Frontend
 
-![Project Banner](project-banner-image-url)
+[<img src="https://github.com/MJunaid648/recipe-app/blob/main/recipe%20design.png"/>](https://github.com/MJunaid648/recipe-app/blob/main/recipe%20design.png)
 
 Welcome to Recipe-app! This is a fully responsive frontend for a recipe app, designed during my internship at Cyberevangelists in Lahore. The app allows users to explore and discover various recipes in a visually appealing manner.
 
@@ -24,10 +24,6 @@ Welcome to Recipe-app! This is a fully responsive frontend for a recipe app, des
 - User-friendly and visually appealing design.
 - Fully responsive layout for different screen sizes.
 - Intuitive navigation for a seamless browsing experience.
-
-## Screenshots
-
-[<img src="https://github.com/MJunaid648/recipe-app/blob/main/recipe%20design.png"/>](https://github.com/MJunaid648/recipe-app/blob/main/recipe%20design.png)
 
 ## Technologies Used
 
